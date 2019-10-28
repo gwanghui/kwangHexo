@@ -13,7 +13,7 @@ timezone: "Asia/Seoul"
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://blog.devkwang.app
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -89,4 +89,7 @@ theme: tranquilpeak
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo: https://github.com/gwanghui/gwanghui.github.io.git
+  branch: master
+
