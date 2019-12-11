@@ -16,8 +16,9 @@ Provider Manager는 Request의 Authentication을 다루는 AuthenticationProvide
 DAO기반, LDAP기반, anonymous기반 등 여러가지 Provider를 관리할 수 있다. 만약 각 Provider에서 처리할 수 없고 null값이 나온다면
 Provider Manager는 ProviderNotFoundException을 Throw 해 처리한다.
 
-## DaoAuthenticationProvider
+## Authentication - DaoAuthenticationProvider
 
+Authentication의 간단한 구현체는 DaoAuthenticationProvider이며 이는 프레임워크에서 조기에 지원한 하나의 구현체입니다. 
 ```java
 public class DaoAuthenticationProvider extends AbstractUserDetailsAuthenticationProvider {
 	private static final String USER_NOT_FOUND_PASSWORD = "userNotFoundPassword";
@@ -65,6 +66,9 @@ public class WebConfig extends WebSecurityConfigurerAdapter {
 }
 ```
 보통 테스트시에는 InMemoryUserDetailsManager를 UserDetailsService 빈으로 생성해 사용한다.
+인증을 성공한 이후 보안상의 문제로 인증된 Authentication 객체를 삭제한다고 한다. 허나 Stateless Application상의 성능 향상을 위해선 Cache가 필수이고
+이를 지원하기 위해 AuthenticationProvider에 캐쉬구현을 하거나 복사본을 만들어 놓고, eraseCredentialsAfterAuthentication Property를 disable 할수도 있다고 한다.
+자세한 사항은 Javadoc의 구현을 확인하라고 한다. 
 
 ### UserDetailService 
 
