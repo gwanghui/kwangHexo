@@ -75,6 +75,13 @@ Do not just respond based on screen size, adapt based on actual device hardware.
 1) Define buckets 
 2) Integrate buckets into logging
 3) Adapt loading based on buckets
+![](/images/adaptiveLoading/adaptiveLoading_1.png)
+![](/images/adaptiveLoading/adaptiveLoading_2.png)
+![](/images/adaptiveLoading/adaptiveLoading_3.png)
+![](/images/adaptiveLoading/adaptiveLoading_4.png)
+![](/images/adaptiveLoading/adaptiveLoading_5.png)
+![](/images/adaptiveLoading/adaptiveLoading_6.png)
+![](/images/adaptiveLoading/adaptiveLoading_7.png)
 
 
 browser 기준으로
