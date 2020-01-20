@@ -49,6 +49,11 @@ public @interface CustomAnnotation {
     - 어노테이션의 상속을 가능하게 한다.
     - 주의 : 어노테이션 끼리의 상속이 아닌 해당 어노테이션을 가지고 있는 클래스를 상속할 경우 자식 클래스도 해당 어노테이션을 가짐을 뜻한다.
     
+- @Native
+    - JVM이 설치된 OS의 네이티브 메서드에 의해 참조되는 상수필드에 붙이는 어노테이션이다.
+    - JNI (Java Native Interface)
+    - Object, Atomic, file 등
+    
 - @Repeatable
     - 같은 어노테이션을 중복정의 가능한 @Repeatable 어노테이션을 제공
     
