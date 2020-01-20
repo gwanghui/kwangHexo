@@ -70,6 +70,7 @@ public @interface CustomAnnotation {
 ```
 
 - 아래와 같이 하나의 RGB Color가 Color에 속함을 보이고 
+
 ```java
 @Color("green")
 @Color("blue")
