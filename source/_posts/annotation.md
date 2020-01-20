@@ -85,3 +85,9 @@ public class RGBColor { ... }
      Color[] value();  
  }
 ``` 
+
+
+- 참조 : 
+    - https://asfirstalways.tistory.com/309
+    - https://jistol.github.io/java/2018/08/31/annotation-repeatable/
+    - https://stackoverflow.com/questions/23973107/how-to-use-inherited-annotation-in-java/23973331
