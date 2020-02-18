@@ -78,4 +78,24 @@ public class TransactionManagementConfigurationSelector extends AdviceModeImport
     - 동적으로 값을 얻어와 빈에 할당하려면 이 방법 뿐이였다.
     - 준비물 : Google Reflections Library, 
 
+
+```java
+public void registerBeanDefinitions(AnnotationMetadata annotationMetadata, BeanDefinitionRegistry registry) {
+    String basePackageName = ((StandardAnnotationMetadata) annotationMetadata).getIntrospectedClass().getPackage().getName();
+    Set<Class<?>> interfaces = new Reflections(basePackageName).getTypesAnnotatedWith(ProjectFeignClient.class);
+
+    interfaces.forEach(type -> {
+      BeanDefinitionBuilder builder = BeanDefinitionBuilder.genericBeanDefinition(ProjectFeignFactoryBean.class);
+      builder.setLazyInit(true);
+      builder.addPropertyValue("type", type.getName());
+      builder.setAutowireMode(2);
+
+      AbstractBeanDefinition definition = builder.getBeanDefinition();
+      definition.setPrimary(true);
+
+      BeanDefinitionReaderUtils.registerBeanDefinition(
+              new BeanDefinitionHolder(definition, type.getName()), registry
+      );
+    });
+```
     
