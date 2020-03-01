@@ -16,3 +16,4 @@ npm-debug.log*
 .idea
 
 /themes/melody/node_modules
+/themes/melody/package-lock.json
