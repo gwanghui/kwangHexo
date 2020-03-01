@@ -77,6 +77,7 @@ sudo apt install docker-ce docker-ce-cli containerd.io
 sudo docker run hello-world
 ```
 
+4. 확인
 ```shell script
 Unable to find image 'hello-world:latest' locally
 latest: Pulling from library/hello-world
@@ -104,5 +105,6 @@ Share images, automate workflows, and more with a free Docker ID:
 
 For more examples and ideas, visit:
  https://docs.docker.com/get-started/
+
 ```
 
