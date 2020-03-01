@@ -4,7 +4,9 @@ public
 .deploy_git
 /dist
 /coverage
-.idea/vcs.xml
+# Editor directories and files
+.idea
+/.idea/vcs.xml
 
 # local env files
 .env.*.local
@@ -12,8 +14,7 @@ public
 # Log files
 npm-debug.log*
 
-# Editor directories and files
-.idea
+
 
 /themes/melody/node_modules
 /themes/melody/package-lock.json
