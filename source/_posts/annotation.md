@@ -1,7 +1,11 @@
 ---
 title: annotation
 date: 2020-01-20 19:15:38
-tags:
+tags: 
+- Java
+categories:
+- Java
+- Java 8
 ---
 
 ### Java Annotation 

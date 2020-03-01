@@ -1,7 +1,12 @@
 ---
 title: apache-ignite-spring-boot
 date: 2020-02-18 22:00:35
-tags:
+tags: 
+- Java 
+- Spring
+categories:
+- Java
+- Cache
 ---
 cache도 전략 및 패턴을 좀 봐야함
 

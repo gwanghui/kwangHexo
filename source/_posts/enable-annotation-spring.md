@@ -2,6 +2,12 @@
 title: enable-annotation-spring
 date: 2020-01-20 20:06:59
 tags:
+- Java
+- Spring
+- EnableAnnotation
+categories:
+- Java
+- Spring
 ---
 
 ### Spring Boot에서 Enable로 시작하는 Annotation

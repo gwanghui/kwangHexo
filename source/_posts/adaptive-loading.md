@@ -1,7 +1,12 @@
 ---
 title: adaptive-loading
 date: 2019-12-11 13:45:22
-tags:
+tags: 
+- JavaScript
+
+categories:
+- Web
+- JavaScript
 ---
 https://youtu.be/puUPpVrIRkc
 

@@ -1,7 +1,12 @@
 ---
 title: application-argument
 date: 2019-12-19 15:00:54
-tags:
+tags: 
+- Java
+- Spring
+categories:
+- Java
+- Spring
 ---
 Spring boot 실행할 때 args 를 전달받기 위한 Interface.
 
