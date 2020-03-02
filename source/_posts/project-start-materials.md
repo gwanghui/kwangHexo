@@ -25,25 +25,27 @@ Port 설정을 하지 않으면 8080 포트로 기동 되기에 HTTP_PORT 를 �
 
 Docker를 이용한 Container 배포를 하기 위해 로컬에서 Docker를 사용할 수 있도록 설치 해보자
 https://docs.docker.com/install/linux/docker-ce/ubuntu/ 에 매우 잘 나와 있다.
-### SET UP THE REPOSITORY
 
-1. update the apt package index :
+### SET UP THE REPOSITORY
+1. update the apt package index:
 ```shell script
-apt update
-```    
+sudo apt update
+```
 
 2. Install packages to allow apt to use a repository over HTTPS:
 ```shell script
-sudo apt-get install \
+sudo apt install \
      apt-transport-https \
      ca-certificates \
      curl \
      gnupg-agent \
      software-properties-common
+
 ```
 
 3. Add Docker’s official GPG key:
 GPG(PGP)는 암호화 프로그램으로 RSA 방식을 사용하며 주로 이메일을 암호화 하는데 사용된다.
+
  ```shell script
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 
@@ -52,10 +54,9 @@ sudo apt-key fingerprint 0EBFCD88
 
 4. Set up the stable repository
 lsb_release -cs 는 Ubuntu distribution 정보를 알수 있다.
-- Eoan 19.10
-- Bionic 18.04 (LTS)
-- Xenial 16.04 (LTS)
-
+  - Eoan 19.10
+  - Bionic 18.04 (LTS)
+  - Xenial 16.04 (LTS)
 ```shell script
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 ```
