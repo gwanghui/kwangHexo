@@ -30,3 +30,8 @@ Locale Extension : buddhist, japanese, gregory 형태의 달력 선택 가능
 |한국어|ko|Kore|KR|
 |일본어|ja||JP|
 |영어|en||US|
+
+- Locale 은 Display 속성과 Format 속성을 따로 관리한다.
+- Display 속성은 언어를 표현하는 단어를 어울러서 가지고 있다.
+- Format 속성은 Locale 에 해당하는 숫자, 연도 포멧을 가지고 있다.
+
