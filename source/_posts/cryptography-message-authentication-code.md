@@ -65,7 +65,15 @@ categories:
     
 - Encrypt-and-MAC
     - 평문을 대칭 암호로 암호화 한 후 그와는 별도로 평문의 MAC 값을 얻는 방법
+    - ex) SSH
 
 ![](/images/cryptography/mac/encrypt-and-mac.png)
-   
- 
+
+- MAC-then-Encrypt
+    - 미리 평문의 MAC 값을 얻고, 평문과 MAC 값 양쪽을 정리하여 대칭 암호로 암호화 하는 방법
+    - ex) SSL
+  
+![](/images/cryptography/mac/encrypt-and-mac.png)
+
+
+
