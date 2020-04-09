@@ -55,6 +55,14 @@ categories:
 
 ![](/images/cryptography/block/AES/GCM.png)
 
+- c : Cypher message
+- m : message
+- $K_E$ : Message를 암호화 할 Key
+- $K_I$ : Tag를 암호화 할 Key
+- $E(K_E,m)$ : message 암호화
+- $S(K_I,c)$ : c로 MAC값 계산
+- $E(K_E, m||tag)$
+
 - Encrypt-then-MAC
     - 평문을 대칭 암호로 암호화 한 후 암호문의 MAC 값을 계싼
     - 메세지 인증 코드 입력에 암호문을 부여
@@ -73,7 +81,18 @@ categories:
     - 미리 평문의 MAC 값을 얻고, 평문과 MAC 값 양쪽을 정리하여 대칭 암호로 암호화 하는 방법
     - ex) SSL
   
-![](/images/cryptography/mac/encrypt-and-mac.png)
+![](/images/cryptography/mac/MAC-then-Encrypt.png)
 
+#### GMAC 
+- Galois/Counter Mode MAC
+    - GCM을 메세지 인증 코드 전용으로 사용
 
+#### HMAC
+- 일방향 해시 함수를 이용하여 메시지 인증 코드를 구성
+- HMAC의 일방향 해시 함수는 모듈형으로 골라서 사용
+- HMAC-SHA1 : SHA-1
+
+- RFC 2104 정의
+    - $HMAC(K,m) = H\big( ({K'}\oplus opad ) \big)$
+    
 
