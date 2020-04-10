@@ -88,11 +88,52 @@ categories:
     - GCM을 메세지 인증 코드 전용으로 사용
 
 #### HMAC
+- Hash Message Authentication Code
 - 일방향 해시 함수를 이용하여 메시지 인증 코드를 구성
 - HMAC의 일방향 해시 함수는 모듈형으로 골라서 사용
 - HMAC-SHA1 : SHA-1
 
 - RFC 2104 정의
-    - $HMAC(K,m) = H\big( ({K'}\oplus opad ) \big)$
-    
+    $HMAC(K,m) = H\big( ({K'}\oplus opad ) \big) ||  H\big( ({K'}\oplus ipad || m)\big )$
+    $K' = \begin{cases} 
+    H(K) &\text{K is larger than block size} \\
+    K &\text{otherwise}
+    \end{cases}$
 
+- HMAC의 순서
+    1. 키 패딩 : 일방향 해시 함수 블록 길이
+    2. 패딩한 키와 ipad (Inner Padding)의 XOR
+    3. 메시지 결합
+    4. 해시 값의 계산
+    5. 패딩한 키와 opad(Outer Padding)의 XOR
+    6. 해시 값과의 결합
+    7. 해시 값의 계산
+    
+![](/images/cryptography/mac/HMAC.png)
+
+- Replay 공격
+
+![](/images/cryptography/mac/replay_attack.png)
+
+- Replay 공격 방어
+    - 순서 번호 (Sequence number) : 송신 메세지에 매회 1씩 증가하는 번호 (순서 번호, Sequence number)
+        - 마지막 통신시 순서 번호를 저장
+    - TimeStamp
+        - 송신 메세지에 현재 시각 넣기
+        - 송수신자 사이의 동기화 필요
+    - 비표(Nonce)
+        - 송신자에게 일회용의 랜덤한 값을 전송
+        - 메시지와 비표를 합해 MAC 값을 계산
+        - 비표 값은 통신 마다 교체
+        
+- 키 추측 공격
+    - Brute Force
+    - Birthday Attack
+
+- MAC 값만 획득한 공격자가 키를 추측하지 못하도록 해야 한다
+    - 해시 함수의 일방향성
+    - 해시 함수의 충돌내성
+    - 키 생성에 의사난수 생성기 사용
+
+
+![](/images/cryptography/mac/mac_algorithm_types.png)
