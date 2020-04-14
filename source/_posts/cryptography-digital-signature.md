@@ -2,6 +2,9 @@
 title: cryptography-digital-signature
 date: 2020-04-13 17:57:47
 tags:
+- digital signature
+categories:
+- cryptography
 ---
 ### Digital signature characteristics
 - Unforgeable (위조불가)
