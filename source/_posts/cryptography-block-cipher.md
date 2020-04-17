@@ -19,7 +19,9 @@ categories:
 - 부족한 size 만큼 바이트 값을 추가하는 PKCS7 Padding을 많이 사용
 - 3Byte가 부족할 경우 03d을 3개 패딩
 
-![](/images/cryptography/block/AES/PKCS7_Padding.png)
+![](온라인 상점은 Microservice 아키텍처 패턴을 사용하므로 제품 세부 사항 데이터가 여러 서비스에 분산됩니다. 예를 들어
+
+)
 
 ### Operation Mode
 - 입력데이터가 블록보다 크면 암/복호화시 여러 개의 블록이 생성됨
