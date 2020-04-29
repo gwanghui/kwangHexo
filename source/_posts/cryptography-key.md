@@ -90,6 +90,17 @@ categories:
     - 키 배포 센터
     - 공개키 암호
     - *Diffie-Hellman 키 교환*
+    
+3. 키 갱신 (key updating)
+- 현재 키의 해시값을 다음 키로 사용
+- 키 노출시 과거 통신의 복호화를 막을 수 있다.
+- 이를 백워드 시큐리티라 한다.
+
+4. 키 보존
+- 키를 반복해서 사용할 경우 키 보존 문제를 고려
+    - 키 기억 : 보통 실용적 키의 크기나 비트화된 표현 등으로 기억할 수 없다.
+    - 키 암호화 : KEK(Key Encryption Key)
+![](/images/cryptography/key/key_hierarchy.png)
     https://www.crocus.co.kr/1233
     https://rsec.kr/?p=242
     

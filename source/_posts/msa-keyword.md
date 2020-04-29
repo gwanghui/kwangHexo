@@ -72,7 +72,7 @@ https://johngrib.github.io/wiki/Conway-s-law/
 #### Choreography SAGA Pattern
 #### Orchestration SAGA Pattern (조율된 사가 패턴)
 - netflix conductor
-#### Interwoven SAGA Pattern (중첩된 사가 패턴)
+#### Inten SAGA Pattern (중첩된 사가 패턴)
 - 회로 차단하기 (short-circuiting)
 - 잠그기 (Locking)
 - 인터럽트 (Interruption)
