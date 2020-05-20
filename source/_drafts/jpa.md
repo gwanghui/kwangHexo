@@ -1,6 +1,7 @@
 ---
 title: JPA
 tags: jpa, hibernate
+date: 2020-04-08 13:15:22
 ---
 
 JPA ( Java Persistent API )와 ORM ( Object Relational Mapping )
