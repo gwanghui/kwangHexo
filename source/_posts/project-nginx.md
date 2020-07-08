@@ -19,10 +19,9 @@ tags:
  sudo yum install pcre pcre-devel
  sudo yum install zlib zlib-devel
  sudo yum install openssl openssl-devel
- 
+
 #### Make Compile
 - ./configure --prefix=/projectHome --with-http_ssl_module --with-http_v2_module --with-http_realip_module
     - prefix = base nginx folder
     - make
     - make install 
-    
