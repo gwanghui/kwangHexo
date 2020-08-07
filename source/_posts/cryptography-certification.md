@@ -78,7 +78,7 @@ categories:
 - Certificate Signature
 
 - 인증서 파일 확장
-.CER - CER 암호화 된 인증서. 복수의 인자증서도 가능.
+.CER(Window) .CRT(Linux) - CER 암호화 된 인증서. 복수의 인자증서도 가능.
 .DER - DER 암호화 된 인증서.
 .PEM - (Privacy Enhanced Mail) Base64로 인코딩 된 인증서. "-----BEGIN CERTIFICATE-----"와 "-----END CERTIFICATE-----" 가운데에 들어간다.
 .P7B - .p7c 참조.
