@@ -21,7 +21,13 @@ tags:
  sudo yum install openssl openssl-devel
 
 #### Make Compile
-- ./configure --prefix=/projectHome --with-http_ssl_module --with-http_v2_module --with-http_realip_module
+- ./configure --prefix=/home/lscns/project/nginx --with-http_ssl_module --with-http_v2_module --with-http_realip_module --with-http_gzip_static_module
+    - prefix = base nginx folder
+    - make
+    - make install 
+
+#### Make Compile
+- ./configure --prefix=/DATA/nginx --with-http_ssl_module --with-http_v2_module --with-http_realip_module --with-http_gzip_static_module
     - prefix = base nginx folder
     - make
     - make install 
