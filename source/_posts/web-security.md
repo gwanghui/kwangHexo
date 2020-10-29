@@ -15,7 +15,7 @@ tags:
  - X-XSS-Protection : (XSS) 공격을 감지 할 때 페이지 로드를 중지시킬 수 있습니다.
     - 해당 헤더 추가
     - X-XSS-Protection: 1;mode=block
- - X-Frame-Options : 해당 페이지를 <frame> 또는 <iframe>, <object> 에서 렌더링할 수 있는지 여부를 나타내는데 사용됩니다.
+ - X-Frame-Options : 해당 페이지를 frame 또는 iframe, object 에서 렌더링할 수 있는지 여부를 나타내는데 사용됩니다.
     - 해당 헤더 추가
     - X-Frame-Options: sameorigin
 
