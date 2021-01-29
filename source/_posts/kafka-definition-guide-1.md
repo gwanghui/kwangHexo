@@ -2,6 +2,7 @@
 title: kafka-definition-guide-1
 date: 2021-01-18 14:46:55
 tags:
+- kafka
 ---
 ### Keyword
 - page cache : 카프카는 프로듀서에게 빠른 응답 시간을 제공하기 위해 디스크 입출력 성능에 의존한다. !!
