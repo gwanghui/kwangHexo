@@ -2,7 +2,7 @@
 title: spring-boot-application-runner
 date: 2021-01-29 10:41:35
 tags:
-- Runner
+- SpringBoot
 ---
 
 ### CommandLineRunner
