@@ -19,3 +19,13 @@ tags:
 ```shell
 ./bin/kafka-console-producer.sh --broker-list localhost:9092 --topic notification-topic
 ```
+
+### produce messages to a kafka topic from a file 
+```shell
+./bin/kafka-console-producer.sh --broker-list localhost:9092 --topic notification-topic < topic-input.txt
+```
+
+### Produce messages to Kafka with both key and value
+```shell
+./bin/kafka-console-producer.sh --broker-list localhost:9092 --topic notification-topic --property parse.key=true --property key.separator=:
+```
